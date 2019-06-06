@@ -1,0 +1,46 @@
+{
+  "name": "@jetstech/utils",
+  "version": "0.0.1",
+  "description": "VueJS frontend helper functions",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json",
+    "coverage": "yarn run test:base --coverage",
+    "coverage:serve": "yarn run coverage && yarn run serve:lcov",
+    "lint": "tslint -p tsconfig.json",
+    "generate-barrels": "barrelsby -c barrelsby.json",
+    "postinstall": "yarn run build",
+    "serve:lcov": "serve -s coverage/lcov-report",
+    "test": "yarn run test:base --watch",
+    "test:base": "jest --config ./jest.config.js -i",
+    "test:ci": "CI=true yarn run coverage && cat ./coverage/lcov.info | codecov",
+    "verify": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacebartech/utils.git"
+  },
+  "keywords": [],
+  "author": "Julian Coleman <julian@jetstechnologies.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spacebartech/utils/issues"
+  },
+  "homepage": "https://github.com/spacebartech/utils#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.5",
+    "barrelsby": "^2.1.1",
+    "codecov": "^3.5.0",
+    "jest": "^24.8.0",
+    "jest-spec-reporter": "^1.0.6",
+    "serve": "^11.0.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "date-fns": "^1.30.1"
+  }
+}
