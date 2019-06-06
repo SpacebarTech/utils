@@ -1,10 +1,10 @@
 module.exports = {
   collectCoverageFrom: [
-    "src/lib/**/!(index).{js,ts}",
+    "src/**/!(index).{js,ts}",
   ],
   coverageDirectory: "coverage",
   testMatch: [
-    "<rootDir>/src/lib/**/?(*.)(spec|test).(js|ts)?(x)",
+    "<rootDir>/src/**/?(*.)(spec|test).(js|ts)?(x)",
   ],
   reporters: process.env.CI ? undefined : ["jest-spec-reporter"],
   rootDir: ".",
@@ -13,7 +13,7 @@ module.exports = {
     "js",
   ],
   transform: {
-    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.ts$": "ts-jest",
   },
   testEnvironment: "node",
 };
