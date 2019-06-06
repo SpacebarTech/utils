@@ -168,7 +168,7 @@ See also [`equals`](#equals)
 
 `a → b → Boolean`
 
-##### Note: uses `fast-deep-equal` under the hood
+_Note: uses `fast-deep-equal` under the hood_
 
 Returns `true` if its arguments are equivalent, `false`
 otherwise. Handles cyclical data structures.
