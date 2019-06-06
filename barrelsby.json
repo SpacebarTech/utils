@@ -3,5 +3,6 @@
   "directory": "./src",
   "include": ["src/.+.ts$"],
   "exclude": [".spec.ts$"],
-  "location": "all"
+	"location": "all",
+	"singleQuotes": true
 }
