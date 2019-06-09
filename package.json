@@ -1,6 +1,6 @@
 {
   "name": "@jetstech/utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "VueJS frontend helper functions",
   "main": "build/index.js",
   "scripts": {
