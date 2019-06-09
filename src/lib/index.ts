@@ -4,5 +4,6 @@
 
 export * from './assocByKey/index';
 export * from './hasProperty/index';
+export * from './iterate/index';
 export * from './map/index';
 export * from './objToArray/index';
