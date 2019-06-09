@@ -12,7 +12,7 @@ npm i @jetstech/utils
 
 ### API
 
-#### `#hasProperty()`
+#### `#hasProperty()` ✅
 
 `s → {s: x} → Boolean`
 
@@ -30,7 +30,7 @@ hasProperty('y', point); //=> true
 hasProperty('z', point); //=> false
 ```
 
-#### `#objToArray()`
+#### `#objToArray()` ✅
 
 **DEPRECATED/RENAMED**
 
@@ -52,7 +52,7 @@ assocByKey(obj, 'key');
 
 See also [`assocByKey`](#assocbykey).
 
-#### `#assocByKey()`
+#### `#assocByKey()` ✅
 
 `({String: {y: ...}}, String) → [{x: String, y: ...}]`
 
@@ -70,7 +70,7 @@ assocByKey(obj, 'key');
 //=> [{ 'key': 1, 'x': 1 }, { 'key': 2, 'x': 1 }]
 ```
 
-#### `#uid()`
+#### `#uid()` ✅
 
 `s → String`
 
@@ -84,7 +84,7 @@ uid('hello');     //=> hello-625255399542
 uid('something'); //=> something-820055635071
 ```
 
-#### `#iterate()`
+#### `#iterate()` ✅
 
 **DEPRECATED/RENAMED**
 
@@ -107,7 +107,7 @@ iterate(double, {x: 1, y: 2, z: 3}) //=> {x: 2, y: 4, z: 6}
 
 See also [`map`](#map)
 
-#### `#map()`
+#### `#map()` ✅
 
 `Functor f => (a → b) → f a → f b`
 
@@ -126,7 +126,7 @@ map(double, [1, 2, 3]);         //=> [2, 4, 6]
 map(double, {x: 1, y: 2, z: 3}) //=> {x: 2, y: 4, z: 6}
 ```
 
-#### `#clone()`
+#### `#clone()` ✅
 
 `{*} → {*}`
 
@@ -147,7 +147,7 @@ objects === objectsClone;       //=> false
 objects[0] === objectsClone[0]; //=> false
 ```
 
-#### `#compare()`
+#### `#compare()` ✅
 
 **DEPRECATED/RENAMED**
 
@@ -164,7 +164,7 @@ compare([1, 2, 3], [1, 2, 3]); //=> true
 
 See also [`equals`](#equals)
 
-#### `#equals()`
+#### `#equals()` ✅
 
 `a → b → Boolean`
 

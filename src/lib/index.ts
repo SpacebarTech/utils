@@ -3,7 +3,11 @@
  */
 
 export * from './assocByKey/index';
+export * from './clone/index';
+export * from './compare/index';
+export * from './equals/index';
 export * from './hasProperty/index';
 export * from './iterate/index';
 export * from './map/index';
 export * from './objToArray/index';
+export * from './uid/index';
