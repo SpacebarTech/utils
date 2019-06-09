@@ -8,6 +8,10 @@ import { toPairs } from '../../';
  * property of that object.
  */
 
+interface IndexedObject {
+	[key: string]: any;
+}
+
 export function assocByKey( obj : IndexedObject, key: string ) : IndexedObject[] {
 	const pairs = toPairs( obj );
 	const fn = ( [value, obj] ) => { return obj[key] = value, obj; };

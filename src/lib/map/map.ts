@@ -12,6 +12,10 @@ import { hasProperty } from '../hasProperty';
  * `{x: 1, y: 2, z: 3}`.
  */
 
+interface IndexedObject {
+	[key: string]: any;
+}
+
 export function map<T>( fn : any, obj : T ): T | IndexedObject {
 	// Working with arrays, just Array.prototype.map()
 	if ( Array.isArray( obj ) ) {

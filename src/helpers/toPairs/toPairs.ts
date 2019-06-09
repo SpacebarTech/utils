@@ -9,6 +9,10 @@ import { hasProperty } from '../../';
  * consistent across different JS platforms.
  */
 
+interface IndexedObject {
+	[key: string]: any;
+}
+
 export function toPairs( obj : IndexedObject ): [string | number, any][] {
 	const pairs = [];
 

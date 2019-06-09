@@ -5,6 +5,10 @@
  * with the specified name.
  */
 
+interface IndexedObject {
+	[key: string]: any;
+}
+
 export function hasProperty( key: string, obj : IndexedObject ): boolean {
 	return Object.prototype.hasOwnProperty.call( obj, key );
 }
